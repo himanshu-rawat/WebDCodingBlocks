@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<style>
+		/* # is used for ID */
+		p{
+			color: yellow;
+			font-size: 12px;
+		}
+		#green{
+			color: green;
+		}
+		/* . (dot) is used for CLASS */
+		.red{
+			color: red;
+		}
+		.blue{
+			color: blue;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p id="green" class="red" >Hello, There is a line following CSS</p>
+		<p>Lorem ipsum dolor sit amet,</p>
+		<p>recusandae, nulla tempore iusto praesentium quidem,</p>
+		<!-- class order does not matter here matter what is Specificity  -->
+		<p class="red blue">recusandae, nulla tempore iusto praesentium quidem,</p>
+		<p class="red">recusandae, nulla tempore iusto praesentium quidem,</p>
+		<p  class="red" style="color: black; font-size: 24px;">I not red or Green</p>
+	</div>
+	<div>
+		<details>
+		    <summary>Details</summary>
+		    Something small enough to escape casual notice.
+		</details>
+	</div>
+</body>
+</html>

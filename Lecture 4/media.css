@@ -1,0 +1,26 @@
+#container{
+	display: flex;
+	word-wrap: wrap;
+}
+.box{
+	width: 100%;
+    height: 100px;
+}
+.smallbox{
+	height: 50px;
+}
+.b1{
+	background-color: red;
+}
+.b2{
+	background-color: orange;
+}
+.b3{
+	background-color: black;
+}
+.b4{
+	background-color: blue;
+}
+.b5{
+	background-color: green;
+}

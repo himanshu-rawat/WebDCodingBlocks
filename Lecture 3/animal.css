@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	margin:0px;
+	background-color: #ebefec;
+	font-family: cursive;
+}
+#title{
+		background-color:#7d7d88;
+		border-bottom: 2px solid #a6ab95; 
+		height: 80px;
+		width: 100%;
+}
+#titleHead{
+	display: inline-block;
+	margin-left: 45%;
+	margin-top: 20px;
+	font-weight: bolder;
+	font-size: 34px;
+	text-decoration: underline;
+}
+#elephentImage{
+	height: 450px;
+	width: 800px;
+}
+figure{
+	border:1px solid black;
+	display: inline-block;
+	margin-left:33%;
+	padding:10px;
+}
+ li:hover{
+ 	cursor: pointer;
+	color: red;
+}
+img{
+	height: 450px;
+	width: 800px;
+}
+figcaption{
+	display: inline;
+	margin-left: 75%;
+	margin-bottom: 100px;
+	color: white;
+	background-color: black;
+	width: 200px;
+	text-align: center;
+}
+#about{
+	margin-top:  100px;
+	width: 1000px;
+	height: 300px;
+	margin-left: 13%;
+	border:1px solid black;
+}
+#details{
+	width:800px;
+	height: 200px;
+	margin-left: 100px;
+	margin-top: 50px;
+	border:1px solid black;
+}
+#details h4{
+	font-size: 26px;
+	margin:20px;
+	text-align: center;
+}
+#details p{
+	margin:7px;
+}
+#characteristics{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 1000px;
+	height: 300px;
+	margin-left: 13%;
+	border:1px solid black;
+}
+#characteristics div{
+	margin-left: 15px;
+}
+li{	
+	margin-left: 70px;
+	padding-bottom: 7px;
+}
