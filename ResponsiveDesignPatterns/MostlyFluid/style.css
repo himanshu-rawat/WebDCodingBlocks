@@ -1,0 +1,66 @@
+.bigbox {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.bigbox > .smallbox {
+	height: 150px;
+	width: 100%;
+}
+.b1 {
+	background-color: red;
+}
+.b2 {
+	background-color: green;
+}
+.b3 {
+	background-color: yellow;
+}
+.b4 {
+	background-color: orange;
+}
+.b5 {
+	background-color: blue;
+}
+@media screen and (max-width: 498px) {
+	.bigbox {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.smallbox {
+		width: 100%;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 750px) {
+	.bigbox {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.bigbox .smallbox {
+		width: 50%;
+	}
+	.bigbox .b1 {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 751px) {
+	.bigbox {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.bigbox > .b1 {
+		width: 60%;
+	}
+	.bigbox > .b2 {
+		width: 40%;
+	}
+	.bigbox > .b3 {
+		width: 33.3%;
+	}
+	.bigbox > .b4 {
+		width: 33.3%;
+	}
+	.bigbox > .b5 {
+		width: 33.3%;
+	}
+}
