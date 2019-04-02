@@ -1,0 +1,5 @@
+#Dont track these content.
+*.cpp
+*.exe
+*.dll
+

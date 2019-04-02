@@ -12,5 +12,12 @@ console.log(obj);
 delete obj.name;
 console.log(obj);
 
-obj = { sdf: 1345 };
+// obj = { sdf: 1345 };  this cannot be done because it give differnt refernces to the object.
 console.log(obj);
+
+function sayHello(name) {
+	console.log('Hello ' + name);
+}
+sayHello('Aman');
+sayHello();
+sayHello('Ram ', 'sysf');
