@@ -5,14 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
     <title>Document</title>
 </head>
 <body>
-   <div id="mydiv">
-       hello world
-   </div>
+   <input id="in">
+   <button onclick="printloop()">loop</button>
 
+   <ul id="myul">
+
+   </ul>
+
+    <script>
+        function printloop(){
+         let num=document.getElementById("in");
+         let n=parseInt(num.value);
+         let list=document.getElementById("myul");
+
+         let start=new Date().getTime();
+         let listHTML="";
+         for(let i=0;i<=n;i++){
+             let print="";
+             if(i%3==0){
+                print+='fizz';
+             }
+             if(i%5==0){
+                list.innerHTML+='<li> '+" buzz "+'</li>';
+             }
+            else{
+                list.innerHTML+='<li> '+" fizz buzz"+'</li>';
+             }
+            //  if(i==0){
+            //     list.innerHTML+='<li> '+ i+'</li>';
+
+            //  }
+            //  else if(i%15==0){
+            //     list.innerHTML+='<li> '+" fizz buzz"+'</li>';
+            // }
+            // else if(i%3==0){
+            //     list.innerHTML+='<li> ' +"fizz" +'</li>';
+            // }
+            // else if (i%5==0){
+            //     list.innerHTML+='<li> '+" buzz "+'</li>';
+            // }
+            
+            // else{
+            //     list.innerHTML+='<li> '+i+'</li>';
+            // }
+         }
+         
+        }
+        
+    </script>
 <!-- <script src="script.js"></script> -->
 </body>
 </html>
