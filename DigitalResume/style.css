@@ -1,0 +1,387 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	font-size: 62.5%;
+	/* font-size: 100%; */
+}
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: #777;
+	box-sizing: border-box;
+}
+.container {
+	margin: 1.5rem auto;
+	max-width: 100rem;
+	/* max-width: 1024px; */
+	-webkit-box-shadow: 2px 3px 24px 4px rgba(0, 0, 0, 0.48);
+	-moz-box-shadow: 2px 3px 24px 4px rgba(0, 0, 0, 0.48);
+	box-shadow: 2px 3px 24px 4px rgba(0, 0, 0, 0.48);
+}
+.container > .header {
+	width: 100rem;
+	height: 25rem;
+	background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+	border-bottom: 2px solid #777;
+	display: flex;
+	flex-wrap: wrap;
+}
+.container > .header > .image-box {
+	display: inline-block;
+}
+.container > .header > .image-box > img {
+	margin-top: 3.6rem;
+	margin-left: 3.6rem;
+	width: 18rem;
+	height: 18rem;
+	border-radius: 50rem;
+}
+.container > .header > .image-box > img:hover {
+	cursor: pointer;
+	border: 1px solid white;
+}
+.container > .header > .text-box {
+	display: inline-block;
+}
+.container > .header > .text-box > .name {
+	width: 40rem;
+	margin-left: 30%;
+	margin-top: 6rem;
+}
+.container > .header > .text-box > .name > h1 {
+	color: #fff;
+	font-size: 5rem;
+	letter-spacing: .1rem;
+}
+.container > .header > .text-box > .name > h2 {
+	color: #fff;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	text-align: center;
+}
+.container .big-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.container > .big-box > .contact-box {
+	width: 30rem;
+	height: 80rem;
+	background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+}
+.container > .big-box > .contact-box > .personal-info {
+	margin-left: 2rem;
+}
+.container > .big-box > .contact-box > .personal-info > p {
+	color: #fff;
+	margin-top: 2rem;
+	margin-left: 5rem;
+	font-size: 3rem;
+}
+#address {
+	display: flex;
+	flex-wrap: wrap;
+}
+a:link {
+	margin: 1rem;
+	margin-top: 2em;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #fff;
+}
+.fa-facebook {
+	color: #fff;
+}
+
+.container > .big-box > .education-box {
+	width: 70%;
+	height: 80rem;
+	background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+	border-left: 2px solid #777;
+}
+#edu {
+	margin-top: 3rem;
+	margin-left: 5rem;
+	font-size: 2.5rem;
+	color: #fff;
+	text-decoration: underline;
+}
+.container > .big-box > .education-box > .primary-education {
+	color: #fff;
+	margin-left: 10rem;
+	margin-top: 3rem;
+	width: 50rem;
+	font-size: 1.3rem;
+}
+#thead > th {
+	font-size: 1.8rem;
+}
+tbody td {
+	text-align: center;
+	padding: .5rem;
+}
+.skillHeading {
+	margin-top: 2.5rem;
+	margin-left: 5rem;
+	font-size: 2.5rem;
+	color: #fff;
+	text-decoration: underline;
+}
+#skillTable th {
+	font-size: 1.8rem;
+}
+#skillTable {
+	color: #fff;
+	margin-left: 10rem;
+	margin-top: 3rem;
+	width: 50rem;
+	font-size: 1.3rem;
+}
+progress {
+	border: 1px solid #777;
+}
+.languageKnown {
+	margin-top: 3rem;
+	margin-left: 5rem;
+	font-size: 2.5rem;
+	color: #fff;
+	text-decoration: underline;
+}
+#both {
+	color: #fff;
+	margin-left: 10rem;
+	margin-top: 3rem;
+	width: 50rem;
+	font-size: 1.3rem;
+}
+#declaration {
+	color: #fff;
+	margin-left: 5rem;
+	margin-top: 3rem;
+	width: 50rem;
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1018px) {
+	.container .big-box {
+		display: flex;
+		flex-wrap: wrap;
+		order: 0;
+	}
+	.container > .header {
+		width: 94.9rem;
+	}
+	.container > .big-box > .contact-box {
+		width: 100rem;
+		height: 20rem;
+		background-color: green;
+		order: 2;
+	}
+	.container > .big-box > .contact-box > .personal-info > #address {
+		margin-left: 20%;
+		letter-spacing: 10px;
+	}
+	#skillTable {
+		color: #fff;
+		margin-left: 10rem;
+		margin-top: 3rem;
+		width: 80rem;
+		font-size: 1.3rem;
+	}
+	.container > .big-box > .education-box {
+		width: 100rem;
+		height: 80rem;
+		background-color: black;
+		order: 1;
+	}
+	.container > .big-box > .education-box > .primary-education {
+		color: #fff;
+		margin-left: 10rem;
+		margin-top: 3rem;
+		width: 80rem;
+		font-size: 1.3rem;
+	}
+}
+@media screen and (min-width: 842px) and (max-width: 976px) {
+	.container > .big-box > .education-box > .primary-education {
+		color: #fff;
+		margin-left: 10rem;
+		margin-top: 3rem;
+		width: 70rem;
+		font-size: 1.3rem;
+	}
+	.skillHeading {
+		margin-top: 2.5rem;
+		margin-left: 5rem;
+		font-size: 2.5rem;
+		color: #fff;
+		text-decoration: underline;
+	}
+	#skillTable th {
+		font-size: 1.8rem;
+	}
+	#skillTable {
+		color: #fff;
+		margin-left: 10rem;
+		margin-top: 3rem;
+		width: 60rem;
+		font-size: 1.3rem;
+	}
+}
+@media screen and (min-width: 450px) and (max-width: 841px) {
+	.container > .header > .image-box > img {
+		margin-top: 3.6rem;
+		margin-left: 3rem;
+		width: 15rem;
+		height: 15rem;
+		border-radius: 50rem;
+	}
+	.container > .header > .text-box > .name {
+		width: 30rem;
+		margin-left: 15%;
+		margin-top: 5rem;
+		font-size: 2rem;
+	}
+	.container > .header > .text-box > .name > h1 {
+		color: #fff;
+		/* font-size: 4rem; */
+		letter-spacing: .1rem;
+	}
+	.container > .header > .text-box > .name > h2 {
+		color: #fff;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		margin-right: 46%;
+		/* text-align: center; */
+	}
+	.container > .big-box > .education-box > .primary-education {
+		color: #fff;
+		margin-left: 10rem;
+		margin-top: 3rem;
+		width: 40rem;
+		font-size: 1.3rem;
+	}
+	#skillTable {
+		color: #fff;
+		margin-left: 10rem;
+		margin-top: 3rem;
+		width: 50rem;
+		font-size: 1.3rem;
+	}
+	.container > .big-box > .contact-box > .personal-info > #address {
+		margin-left: 10%;
+	}
+	.container > .big-box > .contact-box > .personal-info > #address > .icon {
+		width: 25px;
+		margin: 20px;
+	}
+}
+@media screen and (min-width: 375px) and (max-width: 500px) {
+	.container > .header {
+		order: 0;
+		width: 100vw;
+		height: 100vh;
+		background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+		border-bottom: 2px solid #777;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.container > .header > .image-box > img {
+		margin-top: 5rem;
+		margin-left: 12rem;
+		width: 18rem;
+		height: 18rem;
+		border-radius: 50rem;
+	}
+	.container > .header > .text-box > .name {
+		font-size: 1rem;
+		width: 25rem;
+		text-align: center;
+		margin-left: 35%;
+		margin-top: -10rem;
+	}
+	.container > .header > .text-box > .name > h2 {
+		color: #fff;
+		margin-left: 7rem;
+		margin-top: 2rem;
+	}
+	.container .big-box {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.container > .big-box > .education-box {
+		width: 100%;
+		height: 110rem;
+		background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+		border-left: 2px solid #777;
+	}
+	#edu {
+		margin-top: 3rem;
+		margin-left: 5rem;
+		font-size: 2.5rem;
+		color: #fff;
+		text-decoration: underline;
+	}
+	.container > .big-box > .education-box > .primary-education {
+		color: #fff;
+		margin-left: 3rem;
+		margin-top: 3rem;
+		width: 20rem;
+		font-size: 1.5rem;
+	}
+	#thead > th {
+		font-size: 1.8rem;
+	}
+	tbody td {
+		text-align: center;
+		padding: .8rem;
+	}
+	#skillTable {
+		color: #fff;
+		margin-left: 3rem;
+		margin-top: 3rem;
+		width: 35rem;
+		font-size: 1.3rem;
+	}
+	.skillHeading {
+		margin-top: 2.5rem;
+		margin-left: 5rem;
+		font-size: 2.5rem;
+		color: #fff;
+		text-decoration: underline;
+	}
+	#skillTable th {
+		font-size: 1.8rem;
+	}
+	#declaration {
+		width: 80%;
+	}
+	.container > .big-box > .contact-box {
+		width: 50rem;
+		height: 30rem;
+		background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 131, 0.8));
+	}
+	.container > .big-box > .contact-box > .personal-info > #address {
+		margin-left: 1rem;
+	}
+	.container > .big-box > .contact-box > .personal-info > p {
+		color: #fff;
+		margin-top: 2rem;
+		margin-left: 4rem;
+		font-size: 3rem;
+	}
+}
